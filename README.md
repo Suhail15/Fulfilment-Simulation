@@ -64,7 +64,7 @@ flowchart LR
 
 ## Corrections and extensions
 
-The original coursework simulation measured completion at packing even though collection was another stage. This version includes collection in total time and reports processing and courier waits separately. It also corrects service durations crossing observation boundaries, removes the broken alternative implementation, and replaces one-run batch estimates with independent replications and paired comparisons.
+The original simulation measured completion at packing even though collection was another stage. This version includes collection in total time and reports processing and courier waits separately. It also corrects service durations crossing observation boundaries, removes the broken alternative implementation, and replaces one-run batch estimates with independent replications and paired comparisons.
 
 The tests check repeatability, shared random inputs, event ordering, collection timing, utilisation bounds, boundary overlap, missing express groups, overloaded-system draining, and confidence interval calculations.
 
@@ -76,4 +76,4 @@ The tests check repeatability, shared random inputs, event ordering, collection 
 - Queue priority is non-preemptive. FIFO can change express waiting times even when overall mean turnaround barely changes.
 - The model has not been calibrated against a real warehouse. Results use abstract time units.
 
-Developed from individual university simulation coursework by [Mohammed Suhail Hussain](https://github.com/Suhail15). Uses [SimPy shared resources](https://simpy.readthedocs.io/en/latest/topical_guides/resources.html). No software license has been selected.
+Developed from individual university simulation by [Mohammed Suhail Hussain](https://github.com/Suhail15). Uses [SimPy shared resources](https://simpy.readthedocs.io/en/latest/topical_guides/resources.html). No software license has been selected.
